@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure the body covers the entire viewport height */
+    background-color: #222; /* Dark background color */
+    color: #ddd; /* Light text color */
+    overflow-y: auto; /* Allow vertical overflow */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.instructions-container {
+    width: 98%;
+    max-width: 600px; /* Adjust this value to match the maximum width of the instructions */
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: center; /* Center the text horizontally */
+}
+
+#instructions {
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: Courier, monospace;
+    text-align: justify;
+}
+
+/* Media query for vertical mobile screens */
+@media screen and (max-width: 600px) and (orientation: portrait) {
+    #instructions {
+        text-align: left; /* Change text-align to left for vertical mobile screens */
+    }
+}
+
+.email-placeholder:hover {
+    cursor: pointer;
+    color: #ffa500;
+}
+
+.form-container {
+    max-width: 600px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 40px;
+}
+
+form {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #333; /* Darker background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+label {
+    display: block;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #555; /* Darker border color */
+    border-radius: 5px;
+    background-color: #444; /* Darker input background color */
+    color: #ddd; /* Light text color */
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #888; /* Lighter border color on focus */
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing of textarea */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50; /* Green button color */
+    color: #fff; /* White text color */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px; /* Add margin between buttons */
+}
+
+button:last-child {
+    margin-bottom: 0; /* Remove margin from the last button */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+a {
+    color: #1e90ff; /* Blue color for links */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold; /* Make the link text bold */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+a:hover {
+    color: #ffa500; /* Orange color for links on hover */
+    text-decoration: underline; /* Add underline on hover */
+}

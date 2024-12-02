@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parley</title>
+  <link rel="stylesheet" href="styles/form.css">
+  <style>
+    .container {
+        display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="instructions-container">
+      <div id="instructions">
+          <!-- Instructions will be populated dynamically -->
+      </div>
+    </div>
+    <div class="form-container">
+      <form id="contact-form" method="POST" enctype="text/plain">
+          <!-- Form fields will be populated dynamically -->
+      </form>
+    </div>
+  </div>
+  <noscript>
+    <div style="color: red; text-align: center; padding: 20px;">
+      JavaScript is disabled. Please enable JavaScript to use this form.
+    </div>
+  </noscript>
+<script src="scripts/form.js"></script>
+</body>
+</html>
