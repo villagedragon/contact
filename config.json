@@ -1,135 +1,81 @@
 {
   "instructions": [
     "<p>",
-    "Fill out the form below, and click <b>Send</b> to submit it.",
-    "If that should fail, simply click <b>Download Form</b> and manually",
-    "email the completed form to:",
-    "<strong class='email-placeholder'>[Email Address]</strong>.",
+    "请填写以下联系表格, 并点击最后<b>提交</b>按钮。",
+    "我们会在查看你的信息后与你联系",
     "</p>"
   ],
-  "subject": "Your Form Subject",
-  "title": "Your Custom Title",
-  "send_button_text": "Custom Submit Text",
-  "download_button_text": "Custom Download Text",
-  "missing_field_message": "Custom Missing Field Alert Message",
-  "enable_form_download": true,
-  "form_backend_url": null,
+  "subject": "Stranger Contact Form",
+  "title": "Stranger Contact Form",
+  "send_button_text": "提交",
+  "download_button_text": "下载",
+  "missing_field_message": "请回答这个问题",
+  "enable_form_download": false,
+  "form_backend_url": "https://formspree.io/f/meoqvabl",
   "ignore_file_upload": true,
-  "email": "your_email@example.com",
+  "email": "villagedragon@outlook.com",
   "questions": [
     {
-      "label": "Upload funny memes",
-      "name": "meme_imgs",
-      "type": "file",
-      "required": true,
-      "custom": {
-        "multiple": true
-      }
-    },
-    {
-      "label": [
-        "This is a multiline label. It is intended to make it easier to write",
-        "multiline questions and include <i>interesting</i>",
-        "<a href='https://developer.mozilla.org/en-US/docs/Web/HTML'",
-        "target='_blank'>HTML Syntax</a>",
-        "directly in your <i>question text</i>"
-      ],
-      "name": "multiline_html_question",
-      "type": "text",
-      "required": false
-    },
-    {
-      "label": "Select your favorite color",
-      "name": "favorite_color",
-      "type": "selectbox",
-      "required": true,
-      "options": [
-        {
-          "label": "--Choose your favorite color(s)--",
-          "value": "",
-          "selected": true,
-          "disabled": true
-        },
-        { "label": "Red", "value": "red" },
-        { "label": "Blue", "value": "blue" },
-        { "label": "Green", "value": "green" },
-        { "label": "Yellow", "value": "yellow" },
-        { "label": "Purple", "value": "purple" },
-        { "label": "Orange", "value": "orange" },
-        { "label": "Pink", "value": "pink" },
-        { "label": "Black", "value": "black" },
-        { "label": "White", "value": "white" }
-      ],
-      "custom": {
-        "multiple": true
-      }
-    },
-    {
-      "label": "имя (Name)",
+      "label": " * 姓名",
       "name": "name",
       "type": "text",
       "required": true
     },
     {
-      "label": "ایمیل (Email)",
-      "name": "email",
-      "type": "email",
+      "label": "* 电话",
+      "name": "tel",
+      "type": "tel",
       "required": true
     },
     {
-      "label": "Telephone Number (Optional)",
-      "name": "telephone",
-      "type": "tel",
-      "required": false
+      "label": " * 微信号",
+      "name": "wechat",
+      "type": "text",
+      "required": true
     },
     {
-      "label": "Age",
+      "label": "* 性别",
+      "name": "gender",
+      "type": "selectbox",
+      "required": true,
+      "options": [
+        {"label": "男", "value": "male"},
+        {"label": "女", "value": "female"}
+      ],
+      "custom": {
+        "multiple": false
+      }
+    },
+    {
+      "label": "* 年龄",
       "name": "age",
       "type": "number",
       "required": true
     },
     {
-      "label": "Appointment Date/Time",
-      "name": "apt_time",
-      "type": "datetime-local",
+      "label": " * 职业",
+      "name": "wechat",
+      "type": "text",
       "required": true
     },
     {
-      "label": "在历史上的军事战争中，你认为最关键的战略决策是什么",
-      "name": "chinese_question",
-      "type": "textarea",
-      "required": true,
-      "custom": {
-        "minlength": 10,
-        "maxlength": 100
-      }
-    },
-    {
-      "label": "Website",
-      "name": "site_url",
-      "type": "url",
+      "label": "* 请详细解释你联系我们的原因",
+      "name": "reason_for_contacting_us",
+      "type": "text",
       "required": true
     },
     {
-      "label": "Select your country",
-      "name": "country",
-      "type": "selectbox",
-      "required": true,
-      "options": [
-        {
-          "label": "--Select all that apply--",
-          "value": "",
-          "selected": true,
-          "disabled": true
-        },
-        { "label": "USA", "value": "USA" },
-        { "label": "Canada", "value": "CAN" },
-        { "label": "United Kingdom", "value": "UK" },
-        { "label": "Australia", "value": "AUS" }
-      ],
-      "custom": {
-        "multiple": true
-      }
+      "label": "* 你是从哪里了解到或见到我们的",
+      "name": "how_do_you_know_us",
+      "type": "text",
+      "required": true
+    },
+    {
+      "label": "社交媒体帐号（可选）",
+      "name": "social_media_account",
+      "type": "text",
+      "required": false
     }
+
   ]
 }
